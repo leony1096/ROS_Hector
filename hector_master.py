@@ -110,7 +110,7 @@ def master(sx=2., sy=2., gx=2., gy=2.):
             # use STATE_... constants for states
         
             # --- Publish state ---
-            msg_state.data = state
+            msg_state.data = STAT_TURTLE
             pub_state.publish(msg_state)
             
             # --- Publish target ---
